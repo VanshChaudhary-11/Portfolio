@@ -1,0 +1,97 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact - ProCoder09</title>
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        body {
+            width: 100%;
+            min-height: 100vh;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            background-color: #000000;
+            padding: 20px;
+            overflow-x: hidden;
+        }
+
+        .contact-section {
+            width: 100%;
+            max-width: 600px;
+            background-color: #000000;
+            border-radius: 20px;
+            padding: 30px;
+            box-shadow: 5px 5px 20px 1px #4acfee;
+            text-align: center;
+        }
+
+        .contact-section h1 {
+            color: white;
+            font-size: clamp(1.8rem, 6vw, 2.5rem);
+            font-weight: 900;
+            margin-bottom: 20px;
+            background: linear-gradient(to right, #4acfee, #53f8c9, #6070fd, #5bbdff, #4acfee);
+            background-size: 200%;
+            background-clip: text;
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            animation: animate-gradient 2.5s linear infinite;
+        }
+
+        .contact-section p {
+            color: white;
+            font-size: clamp(1rem, 3vw, 1.2rem);
+            font-weight: 400;
+            margin-bottom: 15px;
+        }
+
+        @keyframes animate-gradient {
+            to {
+                background-position: 200%;
+            }
+        }
+
+        @media (max-width: 600px) {
+            .contact-section {
+                padding: 20px;
+                border-radius: 15px;
+            }
+
+            .contact-section h1 {
+                font-size: clamp(1.5rem, 5vw, 2rem);
+            }
+
+            .contact-section p {
+                font-size: clamp(0.9rem, 2.5vw, 1.1rem);
+            }
+        }
+
+        @media (max-width: 400px) {
+            .contact-section {
+                padding: 15px;
+                border-radius: 10px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <section class="contact-section">
+        <h1 data-aos="fade-up" data-aos-duration="1000">Contact Information</h1>
+        <p data-aos="fade-up" data-aos-duration="1000" data-aos-delay="200">vanshchoudhary0811@gmail.com</p>
+    </section>
+
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+        AOS.init();
+    </script>
+</body>
+</html>
